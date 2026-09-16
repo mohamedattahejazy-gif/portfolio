@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056b3;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Hero / Banner Section - Using local image from images folder */
+.hero {
+    position: relative;
+    height: 250px;
+    background: linear-gradient(rgba(0, 40, 85, 0.7), rgba(0, 40, 85, 0.7)), url('images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills-section h2 {
+    font-size: 32px;
+    color: #00bfff;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 320px;
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.middle {
+    background: linear-gradient(135deg, #e0f8f0 0%, #ffffff 100%);
+}
+
+.card-icon {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the local images inside the cards */
+.card-icon img {
+    max-height: 80px;
+    max-width: 80px;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
